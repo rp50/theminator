@@ -3,12 +3,9 @@ import arc
 import random
 from json import dump, load
 from typing import Optional
-from dotenv import load_dotenv
 from os import getenv
 
-load_dotenv()
-
-BOT_TOKEN = getenv("DISCORDAPITOKEN")
+BOT_TOKEN = getenv("DISCORD_API_TOKEN")
 
 bot = hikari.GatewayBot(token=BOT_TOKEN)
 
