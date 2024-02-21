@@ -29,3 +29,14 @@ docker run \
 -v "$(pwd)"/data.json:/data.json \
 theminator
 ```
+
+Alternatively, if you are running it persistently (as intended), use the following command.
+
+```bash
+docker run \
+-d \
+--restart always \
+--env-file ./.env \
+-v "$(pwd)"/data.json:/data.json \
+theminator
+```
