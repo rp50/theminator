@@ -11,7 +11,7 @@ bot = hikari.GatewayBot(token=BOT_TOKEN)
 
 client = arc.GatewayClient(bot)
 
-cron_str: str = "0 10 * * 0"
+cron_str: str = "0 18 * * 0"
 
 active = []  # List containing user_ids of people in the rotation
 inactive = []  # List containing user_ids of people in the rotation who have already been picked
