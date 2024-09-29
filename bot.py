@@ -106,7 +106,7 @@ async def rotation() -> None:
         write_data()
         return
     await bot.rest.create_message(
-        channel=channel_id, content=f"{user.mention}'s turn to choose the theme!"
+        channel=channel_id, content=f"{user.mention}'s turn to choose the theme!", user_mentions=True
     )
 
 
